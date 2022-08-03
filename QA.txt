@@ -1,0 +1,16 @@
+# <QA_List 들>
+# 형식: 질문=>task,변수 이름,답변 내용
+# 질문의 온점(.)은 정규 표현식에 사용됩니다. 1개만 쓰세요.
+# 대답의 <variable>은 Load에서 사용할 수 있습니다.
+#
+# (Example)
+# 김태완은 말이야, .=>Save,Comment_Taiwan,김태완님의 코멘트를 업데이트했어요.
+# 김태완 어때.=>Load,Comment_Taiwan,김태완은 <variable>하다카더라
+#
+#
+!질문 업데이트=>Update_qa,None,문답 리스트를 업데이트했습니다.
+테스트 저장:.=>Save,None,데이터 저장 설정.
+테스트 불러오기=>Load,None,데이터 불러오기 설정:<variable>
+게이게이=>Load,Comment_Taiwan,어쩔티비~<variable>
+!test:.=>Add_command,test1,새로운 커맨드를 입력했습니다.
+rpdl.=>Save,test2,saved it to test2
